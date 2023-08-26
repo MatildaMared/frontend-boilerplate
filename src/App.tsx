@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
+import styled from "styled-components";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <div>
+        <Title>Most awesome webpage ever</Title>
         <p>{secretApiKey}</p>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -29,5 +30,10 @@ function App() {
     </>
   );
 }
+
+const Title = styled.h1`
+  color: hotpink;
+  font-size: 32px;
+`;
 
 export default App;
