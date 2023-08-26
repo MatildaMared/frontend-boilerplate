@@ -5,10 +5,12 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const secretApiKey = import.meta.env.VITE_SECRET_API_KEY;
 
   return (
     <>
       <div>
+        <p>{secretApiKey}</p>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
