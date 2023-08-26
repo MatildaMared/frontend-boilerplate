@@ -11,6 +11,9 @@ function App() {
     <>
       <div>
         <Title>Most awesome webpage ever</Title>
+        <Box>
+          <p>Text</p>
+        </Box>
         <p>{secretApiKey}</p>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -32,8 +35,20 @@ function App() {
 }
 
 const Title = styled.h1`
-  color: hotpink;
+  color: var(--color-primary);
   font-size: 32px;
+`;
+
+const Box = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border: 1px solid hotpink;
+  padding: 10px;
+
+  & p {
+    color: red;
+  }
 `;
 
 export default App;
