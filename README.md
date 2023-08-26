@@ -6,7 +6,7 @@ This is an example React boilerplate project using the following techniques:
 - React
 - TypeScript
 - styled-components
-- Pre-commit using husky hook with lint-staged and prettier formatting
+- Pre-commit hooks using husky with lint-staged and prettier formatting
 
 This project is already set up and ready to use by running `npm install` and `npm run dev`, but below are the steps to
 create this project from scratch.
